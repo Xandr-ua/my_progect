@@ -1,31 +1,26 @@
-$accent: #fe3e57;
-$default: #8d8d8d;
+$accent: #FB1B3D;
+$default: #fff;
 $title: #29282d;
 $bg: #f6f6f6;
 
 
-%quicksand-400 {
-  font-family: 'Quicksand-Regular', sans-serif;
+%opensans-300 {
+  font-family: 'OpenSans-LightItalic', sans-serif;
+  font-weight: 300;
+}
+
+%opensans-400 {
+  font-family: 'OpenSans-Regular', sans-serif;
   font-weight: 400;
 }
 
-%quicksand-500 {
-  font-family: 'Quicksand-Medium', sans-serif;
-  font-weight: 500;
+%opensans-600 {
+  font-family: 'OpenSans-SemiBold', sans-serif;
+  font-weight: 600;
 }
 
-%roboto-400 {
-  font-family: 'Roboto-Regular', sans-serif;
-  font-weight: 400;
-}
-
-%roboto-500 {
-  font-family: 'Roboto-Medium', sans-serif;
-  font-weight: 500;
-}
-
-%roboto-700 {
-  font-family: 'Roboto-Bold', sans-serif;
+%opensans-700 {
+  font-family: 'OpenSans-Bold', sans-serif;
   font-weight: 700;
 }
 

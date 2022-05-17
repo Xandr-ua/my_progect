@@ -5,7 +5,69 @@
 @import 'global';
 
 
-
+.header {
+  background-image: url('../images/header-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 45px;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item:not(:last-child) {
+    margin-right: 35px;
+  }
+  &__link {
+    &:hover {
+      color: #FB1B3D;
+    } 
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 120px);
+  }
+  &__title {
+    @extend %opensans-400;
+    font-size: 48px;
+    margin: auto 0;
+    width: 90%;
+  }
+  &__text {
+    @extend %opensans-700;
+    font-size: 90px;
+  }
+  &__link-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  &__link-job {
+    text-align: center;
+    padding-bottom: 28px;
+    position: relative;
+    &:hover {
+      color: $accent;
+      path {
+        fill: $accent;
+      }
+    }
+  }
+  &__link-svg {
+    position: absolute;
+    top: 27px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 
 
 

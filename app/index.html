@@ -1,25 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>More html</title>
-  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon-icon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-icon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon-icon/site.webmanifest">
+  <link rel="mask-icon" href="images/favicon-icon/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
+
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
   <header class="header">
-  
+    <div class="container">
+      <nav class="header__menu">
+
+        <a class="link-logo" href="#">
+          <img class="link-logo__img" src="images/icons/logo.svg" alt="website logo 'More html'">
+        </a>
+
+        <button class="header__burger" type="button">
+          <span class="sr-only">Відкриває меню</span>
+          <span class="header__line-burger"></span>
+        </button>
+
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="#">
+              Про мене
+            </a>
+          </li>
+
+          <li class="header__item">
+            <a class="header__link" href="#">
+              Навики
+            </a>
+          </li>
+
+          <li class="header__item">
+            <a class="header__link" href="#">
+              Послуги
+            </a>
+          </li>
+
+          <li class="header__item">
+            <a class="header__link" href="#">
+              Портфоліо
+            </a>
+          </li>
+
+          <li class="header__item">
+            <a class="header__link" href="#">
+              Контакти
+            </a>
+          </li>
+        </ul>
+
+      </nav>
+
+      <div class="header__content">
+
+        <h1 class="header__title">
+          Привіт, я Олександр Бабюк
+          <span class="header__text">
+            Frontend-розробник
+          </span>
+        </h1>
+
+        <div class="header__link-inner">
+
+          <a class="header__link-job" href="#">
+            дивитись роботи
+            <svg class="header__link-svg" width="37" height="23" viewBox="0 0 37 23" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M18.5 22.0455C17.8368 22.0455 17.1738 21.7923 16.6682 21.287L0.759084 5.37767C-0.252947 4.36564 -0.252947 2.7248 0.759084 1.71318C1.77071 0.701562 3.41121 0.701562 4.42332 1.71318L18.5 15.7906L32.5767 1.71368C33.5887 0.702054 35.229 0.702054 36.2406 1.71368C37.2531 2.7253 37.2531 4.36613 36.2406 5.37816L20.3317 21.2875C19.8259 21.7929 19.1628 22.0455 18.5 22.0455Z"
+                fill="white" />
+            </svg>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
 </header>
   
 
