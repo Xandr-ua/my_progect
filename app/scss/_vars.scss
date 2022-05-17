@@ -1,11 +1,14 @@
 $accent: #FB1B3D;
 $default: #fff;
-$title: #29282d;
-$bg: #f6f6f6;
 
 
 %opensans-300 {
   font-family: 'OpenSans-LightItalic', sans-serif;
+  font-weight: 300;
+}
+
+%potra-300 {
+  font-family: 'Potra', sans-serif;
   font-weight: 300;
 }
 

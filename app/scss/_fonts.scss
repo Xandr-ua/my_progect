@@ -37,3 +37,13 @@
     url('../fonts/OpenSans-LightItalic.woff') format('woff');
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Potra';
+  font-weight: 300;
+  font-style: normal;
+  src: local('Potra'),
+    url('../fonts/Potra.woff2') format('woff2'),
+    url('../fonts/Potra.woff') format('woff');
+  font-display: swap;
+}
