@@ -20,7 +20,7 @@
 
 <body>
 
-  <header class="header">
+  <header class="header" id="header">
     <div class="container">
       <nav class="header__menu">
 
@@ -35,31 +35,31 @@
 
         <ul class="header__list">
           <li class="header__item">
-            <a class="header__link" href="#">
+            <a class="header__link" href="#about">
               Про мене
             </a>
           </li>
 
           <li class="header__item">
-            <a class="header__link" href="#">
+            <a class="header__link" href="#skill">
               Навики
             </a>
           </li>
 
           <li class="header__item">
-            <a class="header__link" href="#">
+            <a class="header__link" href="#service">
               Послуги
             </a>
           </li>
 
           <li class="header__item">
-            <a class="header__link" href="#">
+            <a class="header__link" href="#portfolio">
               Портфоліо
             </a>
           </li>
 
           <li class="header__item">
-            <a class="header__link" href="#">
+            <a class="header__link" href="#contact">
               Контакти
             </a>
           </li>
@@ -78,7 +78,7 @@
 
         <div class="header__link-inner">
 
-          <a class="header__link-job" href="#">
+          <a class="header__link-job" href="#portfolio">
             дивитись роботи
             <svg class="header__link-svg" width="37" height="23" viewBox="0 0 37 23" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -100,7 +100,7 @@
   <main class="main">
     
 
-    <section class="about indent">
+    <section class="about indent" id="about">
       <div class="container">
         <h2 class="title">
           Про мене
@@ -120,7 +120,7 @@
       </div>
     </section>
 
-    <section class="skill indent">
+    <section class="skill indent" id="skill">
       <div class="container">
         <h2 class="title">
           Навики
@@ -159,7 +159,7 @@
     </section>
 
 
-    <section class="service indent">
+    <section class="service indent" id="service">
       <div class="container">
         <h2 class="title">
           Послуги
@@ -204,7 +204,7 @@
     </section>
 
     
-    <section class="portfolio indent">
+    <section class="portfolio indent" id="portfolio">
       <div class="container">
         <h2 class="title">
           Портфоліо
@@ -277,17 +277,71 @@
 
         </ul>
 
-
-
       </div>
     </section>
+
+
+    <section class="contact indent" id="contact">
+      <div class="container">
+        <h2 class="title">
+          Контакти
+        </h2>
+        <div class="contact__wrap">
+          <p class="contact__text">
+            Зв'язатися зі мною можна, скориставшись номером телефону, email, чи в соцмережах:
+          </p>
+          <a class="contact__link" href="tel:380969725549">+38 (096) 972 55 49</a>
+          <a class="contact__link" href="mailto:babiyksasha21@gmail.com">babiyksasha21@gmail.com</a>
+
+          <ul class="contact__social-list">
+
+            <li class="contact__social-item">
+              <a class="contact__social-link contact__social-link--insta"
+                href="https://www.instagram.com/babyuk_sasha/">
+                <img src="" alt="">
+                <span class="sr-only">
+                  Посилання на instagram Бабюка Олександра
+                </span>
+              </a>
+            </li>
+
+            <li class="contact__social-item">
+              <a class="contact__social-link contact__social-link--facebook"
+                href="https://www.facebook.com/babyuk.sasha">
+                <span class="sr-only">
+                  Посилання на facebook Бабюка Олександра
+                </span>
+              </a>
+            </li>
+
+            <li class="contact__social-item">
+              <a class="contact__social-link contact__social-link--telegram" href="https://t.me/babyuk_alexandr">
+                <span class="sr-only">
+                  Посилання на telegram Бабюка Олександра
+                </span>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </section>
+
+
 
 
   </main>
 
 
   <footer class="footer">
-  
+
+    <a class="footer__link-up" href="#header">
+      <span class="sr-only">
+        Посилання на верх сторінки
+      </span>
+    </a>
+
 </footer>
 
 

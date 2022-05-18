@@ -166,8 +166,8 @@
   background-size: cover;
   text-align: center;
 
-  & .indent {
-    padding: 0 0 140px;
+  &.indent {
+    padding: 0 0 40px;
   }
   &__filter-list {
     display: flex;
@@ -192,6 +192,82 @@
 
 .mixitup-control-active {
   color: $accent;
+}
+
+.contact {
+
+  &__wrap {
+    width: 49%;
+  }
+  &__text {
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  &__link {
+    display: block;
+    padding: 15px 0;
+    color: $accent;
+  }
+  &__social-list {
+    display: flex;
+    margin-top: 30px;
+  }
+  &__social-item:not(:last-child) {
+    margin-right: 70px;
+  }
+  &__social-link {
+    
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      text-align: center;
+      width: 44px;
+      height: 44px;
+      display: block;
+    }
+    &--insta::before {
+      background-image: url('../images/icons/instagram.svg');
+    }
+    &--facebook::before {
+      background-image: url('../images/icons/facebook.svg');
+    }
+    &--telegram::before {
+      background-image: url('../images/icons/telegram.svg');
+    }
+  }
+}
+
+.footer {
+  background-image: url('../images/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+
+  &__link-up {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 37px;
+      height: 23px;
+      background-image: url('../images/icons/arrow-up.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transform: rotate(180deg)
+    }
+  }
 }
 
 
