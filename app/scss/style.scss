@@ -159,6 +159,41 @@
   }
 }
 
+.portfolio {
+  background-image: url('../images/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+
+  & .indent {
+    padding: 0 0 140px;
+  }
+  &__filter-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+  &__filter-item:not(:last-child) {
+      margin-right: 35px;
+  }
+  &__btn {
+    font-size: 24px;
+    line-height: 1.6;
+  }
+  &__content-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 45px;
+    justify-items: center;
+  }
+  
+}
+
+.mixitup-control-active {
+  color: $accent;
+}
+
 
 
 
