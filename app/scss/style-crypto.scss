@@ -1,0 +1,255 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+
+
+html,
+body {
+  height: 100%;
+}
+
+.crypto-main {
+  flex-grow: 1;
+}
+
+
+.crypto-header {
+  background-color: #151516;
+  height: 100vh;
+}
+
+.crypto-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  
+
+  &__list {
+    display: flex;
+  }
+  &__item:first-child {
+    text-transform: uppercase;
+    margin-right: 48px;
+    color: $default;
+  }
+  &__item:last-child {
+    color: $crypto-default;
+  }
+  &__link--btn {
+    padding: 12px 18px;
+    border-radius: 8px;
+    background-color: #F2D080;
+    &:hover {
+      color: $default;
+      background-color: transparent;
+      outline: #F2D080 solid 2px;
+    }
+  }
+}
+
+.crypto-header__top {
+  padding: 104px 0 36px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: calc(100vh - 312px);
+  
+
+  &-wrap {
+    display: flex;
+    justify-content: center;
+  }
+  &-title {
+    color: $default;
+    @extend %gilroy-700;
+    font-size: 50px;
+    line-height: 54px;
+    margin-bottom: 32px;
+  }
+  &-text {
+    color: #91919D;
+    @extend %inter-400;
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  &-link-btn {
+    @extend %btn;
+    font-size: 14px;
+    line-height: 21px;
+    &:hover {
+      color: $default;
+      background-color: transparent;
+      outline: #F2D080 solid 1px;
+    }
+  }
+}
+
+.crypto-header__statistics {
+  background-color: #313438;
+  padding: 80px 0;
+
+  &-item {
+    text-align: center;
+  }
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-numb {
+    color: $default;
+    @extend %gilroy-700;
+    font-size: 64px;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
+  &-text {
+    color: #91919D;
+  }
+}
+
+.crypto-footer {
+  padding: 56px 0 40px;
+  background-color: #000;
+  color: #91919D;
+
+  &__list {
+    display: flex;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #282B31;
+  }
+  &__item:not(:last-child) {
+      margin-right: 30px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    &:hover {
+      color: #F2D080;
+      path {
+        fill: #F2D080;
+      }
+    }
+  }
+  &__link-text {
+    padding-left: 16px;
+  }
+  &__text {
+    padding: 32px 0 40px;
+  }
+}
+
+.crypto-currency {
+  padding: 60px 0 80px;
+
+  &__text {
+    text-align: center;
+    margin: 35px 0 64px;
+  }
+  &__list-up,
+  &__list-bottom {
+    margin-bottom: 32px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 32px;
+    justify-items: center;
+  }
+  &__item {
+    padding: 58px 48px 58px 125px;
+    width: 81%;
+    text-align: right;
+    border-radius: 32px;
+    background-color: $default;
+    box-shadow: 0px 0px 17px rgba(17, 25, 48, 0.06),
+    0px 29px 20px -18px rgba(29, 34, 48, 0.06);
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 29%;
+      left: 67px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 57px;
+      height: 57px;
+    }
+    &--bitcoin::before {
+      background-image: url('../images/crypto/icons/btc.svg');
+    }
+    &--etherum::before {
+      background-image: url('../images/crypto/icons/eth.svg');
+    }
+    &--tether::before {
+      background-image: url('../images/crypto/icons/usdt.svg');
+    }
+    &--doge::before {
+      background-image: url('../images/crypto/icons/doge.svg');
+    }
+    &--ripple::before {
+      background-image: url('../images/crypto/icons/riple.svg');
+    }
+    &--dash::before {
+      background-image: url('../images/crypto/icons/dash.svg');
+    }
+    &--litecoin::before {
+      background-image: url('../images/crypto/icons/ltc.svg');
+    }
+    &--stellar::before {
+      background-image: url('../images/crypto/icons/btc-new.svg');
+    }
+    &--tron::before {
+      background-image: url('../images/crypto/icons/trx.svg');
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import 'media';

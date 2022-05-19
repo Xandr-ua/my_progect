@@ -47,3 +47,59 @@
     url('../fonts/Potra.woff') format('woff');
   font-display: swap;
 }
+
+
+////////////// Fonts for the crypto page ///////////////////
+
+@font-face {
+  font-family: 'Inter-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Inter-Regular'),
+    url('../fonts/Inter-Regular.woff2') format('woff2'),
+    url('../fonts/Inter-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: local('Inter-Bold'),
+    url('../fonts/Inter-Bold.woff2') format('woff2'),
+    url('../fonts/Inter-Bold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy-SemiBold';
+  font-weight: 600;
+  font-style: normal;
+  src: local('Gilroy-SemiBold'),
+    url('../fonts/Gilroy-SemiBold.woff2') format('woff2'),
+    url('../fonts/Gilroy-SemiBold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: local('Gilroy-Bold'),
+    url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+    url('../fonts/Gilroy-Bold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ubuntu-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Ubuntu-Regular'),
+    url('../fonts/Ubuntu-Regular.woff2') format('woff2'),
+    url('../fonts/Ubuntu-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+
+/////////////////////  ////////////////////////////

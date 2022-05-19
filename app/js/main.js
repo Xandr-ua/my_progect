@@ -5,6 +5,12 @@ $(function() {
     $('.header__burger').toggleClass('active');
   });
 
+  ///////// Page Crypto /////
+
+  
+
+  ////////// Page Crypto End //////
+
   let mixer = mixitup('.portfolio__content-list');
   
 })

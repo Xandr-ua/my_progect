@@ -1,5 +1,6 @@
 $accent: #FB1B3D;
 $default: #fff;
+$crypto-default: #07070B;
 
 
 %opensans-300 {
@@ -26,6 +27,41 @@ $default: #fff;
   font-family: 'OpenSans-Bold', sans-serif;
   font-weight: 700;
 }
+
+/////////////////// For the crypto page //////////////////
+
+%inter-400 {
+  font-family: 'Inter-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%inter-700 {
+  font-family: 'Inter-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%gilroy-600 {
+  font-family: 'Gilroy-SemiBold', sans-serif;
+  font-weight: 600;
+}
+
+%gilroy-700 {
+  font-family: 'Gilroy-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%ubuntu-400 {
+  font-family: 'Ubuntu-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%btn {
+  padding: 22px 85px;
+  background-color: #F2D080;
+  border-radius: 12px;
+}
+
+//////////////////////////// ////////////////////////
 
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
