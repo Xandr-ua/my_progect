@@ -144,6 +144,7 @@ body {
 
 .crypto-currency {
   padding: 60px 0 80px;
+  overflow: hidden;
 
   &__text {
     text-align: center;
@@ -151,11 +152,16 @@ body {
   }
   &__list-up,
   &__list-bottom {
-    margin-bottom: 32px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-gap: 32px;
     justify-items: center;
+  }
+  &__list-up {
+    margin:0 -170px 32px 0;
+  }
+  &__list-bottom {
+    margin: 0 0 32px -160px;
   }
   &__item {
     padding: 58px 48px 58px 125px;
@@ -204,6 +210,57 @@ body {
     &--tron::before {
       background-image: url('../images/crypto/icons/trx.svg');
     }
+  }
+}
+
+.crypto-benefits {
+  padding-bottom: 128px;
+
+  &__list {
+    padding-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
+  }
+  &__item {
+    max-width: 384px;
+    padding: 152px 18px 32px 18px;
+    background-color: #F6F7FA;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 55px;
+      left: 38%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 104px;
+      height: 104px;
+    }
+    &--support::before {
+      background-image: url('../images/crypto/icons/support.svg');
+    }
+    &--passive::before {
+      background-image: url('../images/crypto/icons/passive.svg');
+    }
+    &--security::before {
+      background-image: url('../images/crypto/icons/security.svg');
+    }
+    &--trading::before {
+      background-image: url('../images/crypto/icons/trading.svg');
+    }
+    &--demo::before {
+      background-image: url('../images/crypto/icons/demo.svg');
+    }
+    &--referral::before {
+      background-image: url('../images/crypto/icons/referral.svg');
+    }
+  }
+  &__text {
+    margin-top: 38px;
   }
 }
 
