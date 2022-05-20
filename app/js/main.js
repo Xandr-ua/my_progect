@@ -7,7 +7,12 @@ $(function() {
 
   ///////// Page Crypto /////
 
-  
+  $(".star").rateYo({
+    starWidth: "29px",
+    normalFill: "#ccccce",
+    ratedFill: "#ffc35b",
+    readOnly: true,
+  });
 
   ////////// Page Crypto End //////
 
