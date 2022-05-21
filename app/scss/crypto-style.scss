@@ -17,15 +17,18 @@ body {
 
 
 .crypto-header {
-  background-color: #151516;
+  background-color: #000;
   height: 100vh;
+
+  &__top-menu {
+    background-color: #151516;
+  }
 }
 
 .crypto-menu {
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
-  
 
   &__list {
     display: flex;
@@ -51,16 +54,19 @@ body {
 }
 
 .crypto-header__top {
-  padding: 104px 0 36px;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: calc(100vh - 312px);
+  justify-content: start;
+  align-items: center;
+  height: calc(100vh - 65px);
   
 
   &-wrap {
     display: flex;
     justify-content: center;
+    
+  }
+  &-content {
+    width: 50%;
   }
   &-title {
     color: $default;
@@ -85,29 +91,8 @@ body {
       outline: #F2D080 solid 1px;
     }
   }
-}
-
-.crypto-header__statistics {
-  background-color: #313438;
-  padding: 80px 0;
-
-  &-item {
-    text-align: center;
-  }
-  &-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  &-numb {
-    color: $default;
-    @extend %gilroy-700;
-    font-size: 64px;
-    line-height: 36px;
-    margin-bottom: 24px;
-  }
-  &-text {
-    color: #91919D;
+  &-img {
+    width: 50%;
   }
 }
 
@@ -142,41 +127,60 @@ body {
   }
 }
 
+.crypto-statistics {
+  background-color: #313438;
+  padding: 80px 0;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__numb {
+    color: $default;
+    @extend %gilroy-700;
+    font-size: 64px;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    color: #91919D;
+  }
+}
+
 .crypto-currency {
   padding: 60px 0 80px;
-  overflow: hidden;
+  
 
   &__text {
     text-align: center;
     margin: 35px 0 64px;
   }
-  &__list-up,
-  &__list-bottom {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 32px;
-    justify-items: center;
-  }
-  &__list-up {
-    margin:0 -170px 32px 0;
-  }
-  &__list-bottom {
-    margin: 0 0 32px -160px;
-  }
-  &__item {
+  &__slider-box {
+    @extend %gilroy-600;
+    font-size: 30px;
+    max-width: 288px;
+    margin: 27px -73px;
+    line-height: 36px;
     padding: 58px 48px 58px 125px;
-    width: 81%;
     text-align: right;
     border-radius: 32px;
     background-color: $default;
     box-shadow: 0px 0px 17px rgba(17, 25, 48, 0.06),
     0px 29px 20px -18px rgba(29, 34, 48, 0.06);
+    text-align: right;
     position: relative;
     &::before {
       content: '';
       position: absolute;
       top: 29%;
-      left: 67px;
+      left: 40px;
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -219,11 +223,13 @@ body {
   &__list {
     padding-top: 64px;
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 32px;
   }
   &__item {
     max-width: 384px;
+    width: 100%;
     padding: 152px 18px 32px 18px;
     background-color: #F6F7FA;
     border-radius: 8px;
@@ -278,6 +284,7 @@ body {
     right: 0;
     height: 356px;
     background: linear-gradient(180deg, rgba(7, 7, 11, 0) 7.93%, #07070B 61.24%);
+    z-index: 2;
   }
 
   &__text {
@@ -287,6 +294,9 @@ body {
   &__list {
     display: flex;
     justify-content: space-between;
+  }
+  &__list-slider {
+    display: none;
   }
   &__item {
     display: flex;
@@ -308,6 +318,7 @@ body {
     bottom: 72px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 3;
      &:hover {
        color: $default;
        background-color: transparent;
@@ -319,27 +330,13 @@ body {
 .crypto-feedback {
   padding: 72px 0 64px;
   background-color: #f6f7fa;
-  overflow: hidden;
 
-  &__list-up,
-  &__list-bottom {
-    display: flex;
-    justify-content: space-between;
-  }
-  &__list-up {
-    margin: 40px 0 30px;
-    position: relative;
-    left: 70px;
-  }
-  &__list-bottom {
-    position: relative;
-    right: 50px;
-  }
-  &__item {
+  &__slider-box {
     padding: 15px 20px 20px 15px;
     background-color: $default;
     border-radius: 16px;
-    width: 19%;
+    max-width: 360px;
+    margin: 60px 15px 0;
   }
   &__date {
     margin: 14px 0 19px;
