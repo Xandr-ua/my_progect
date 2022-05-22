@@ -5,6 +5,9 @@ $(function() {
     $('.header__burger').toggleClass('active');
   });
 
+
+
+
   ///////// Page Crypto /////
 
   $('.crypto-currency__list-up').slick({
@@ -153,6 +156,15 @@ $('.crypto-tools__list-slider').slick({
 
 
   ////////// Page Crypto End //////
+
+
+
+   ///////// Page Hotel /////
+
+  
+
+
+  ////////// Page Hotel End //////
 
   let mixer = mixitup('.portfolio__content-list');
   
