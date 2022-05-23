@@ -1,6 +1,8 @@
 $accent: #FB1B3D;
 $default: #fff;
 $crypto-default: #07070B;
+$hotel-default: #333;
+$color-btn: #EC1F46;
 
 
 %opensans-300 {
@@ -63,7 +65,40 @@ $crypto-default: #07070B;
 
 //////////////////////////// ////////////////////////
 
+%mulish-300 {
+  font-family: 'Mulish-Light', sans-serif;
+  font-weight: 300;
+}
 
+%mulish-400 {
+  font-family: 'Mulish-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%mulish-600 {
+  font-family: 'Mulish-SemiBold', sans-serif;
+  font-weight: 600;
+}
+
+%mulish-700 {
+  font-family: 'Mulish-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%mulish-600 {
+  font-family: 'Mulish-SemiBold', sans-serif;
+  font-weight: 600;
+}
+
+%nunito-400 {
+  font-family: 'Nunito-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%nunito-600 {
+  font-family: 'Nunito-SemiBold', sans-serif;
+  font-weight: 600;
+}
 
 /////////////////// For the hotel page //////////////////
 

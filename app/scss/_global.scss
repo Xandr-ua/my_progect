@@ -18,10 +18,21 @@ body {
 .crypto-body {
   @extend %inter-400;
   font-style: normal;
-  background-color: #fff;
+  background-color: $default;
   color: $crypto-default;
   font-size: 16px;
   line-height: 26px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-body {
+  @extend %mulish-400;
+  font-style: normal;
+  background-color: $default;
+  color: $hotel-default;
+  font-size: 12px;
+  line-height: 15px;
   display: flex;
   flex-direction: column;
 }
@@ -51,6 +62,12 @@ body {
 
 .crypto-container {
   max-width: 1270px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hotel-container {
+  max-width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
 }
