@@ -182,12 +182,17 @@
     
   }
 
+  .crypto-tools__list-slider.slick-slider {
+    display: block;
+  }
+
   .crypto-tools__list-slider .slick-dots {
     z-index: 4;
     display: flex;
     position: absolute;
     bottom: 24%;
-    left: 39%;
+    left: 50%;
+    transform: translateX(-50%);
     & li {
       &:not(:last-child) {
         margin-right: 18px;

@@ -295,9 +295,9 @@ body {
     display: flex;
     justify-content: space-between;
   }
-  &__list-slider {
-    display: none;
-  }
+  // &__list-slider {
+  //   display: none;
+  // }
   &__item {
     display: flex;
     flex-direction: column;
@@ -325,6 +325,10 @@ body {
        outline: #F2D080 solid 1px;
      }
   }
+}
+
+.crypto-tools__list-slider.slick-slider {
+  display: none;
 }
 
 .crypto-feedback {

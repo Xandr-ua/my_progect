@@ -15,10 +15,6 @@ body {
   flex-grow: 1;
 }
 
-.hotel-header {
-  padding-bottom: 18px;
-}
-
 .hotel-header__up-call {
   padding: 24px 0;
   background-color: #F5FAFE;
@@ -363,6 +359,177 @@ body {
     display: block;
   }
 }
+
+.hotel__breadcrumbs {
+  padding: 18px 0;
+
+  &-list {
+    display: flex;
+    font-size: 10px;
+    line-height: 13px;
+    &:first-child {
+      color: #0A223D;
+    }
+  }
+  &-item {
+    margin-right: 2px;
+  }
+}
+
+.hotel-content__name {
+  padding: 23px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-item:nth-child(2) {
+    display: flex;
+    align-items: center;
+  }
+  &-title {
+    @extend %mulish-700;
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 4px;
+  }
+  &-offer {
+    padding: 4px 9px;
+    background-color: $color-btn;
+    @extend %mulish-600;
+    font-size: 10px;
+    line-height: 13px;
+    color: $default;
+    border-radius: 3px;
+    margin-left: 14px;
+    display: block;
+  }
+  &-ratting {
+    padding: 8px 7px;
+    border-radius: 4px;
+    background-color: $color-btn;
+    color: $default;
+    @extend %mulish-600;
+    width: 9%;
+    text-align: center;
+  }
+  &-num {
+    @extend %mulish-700;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 2px;
+    display: block;
+    &-small {
+      font-size: 10px;
+      line-height: 13px;
+    }
+  }
+}
+
+.jq-ry-container {
+  padding: 0;
+}
+
+.hotel-content {
+
+  &__about {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 68px;
+  }
+  &__reserve {
+    width: 32%;
+  }
+  &__options {
+    border-radius: 8px;
+    background-color: #0A223D;
+    padding: 29px 28px 26px 26px;
+    color: $default;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__price {
+    margin-bottom: 9px;
+  }
+  &__text {
+    line-height: 16px;
+  }
+  &__namb {
+    @extend %nunito-600;
+    font-size: 24px;
+    line-height: 33px;
+  }
+  &__icon {
+    position: relative;
+    padding-left: 23px;
+    text-align: right;
+    &:first-child {
+      margin-top: 7px;
+      margin-bottom: 8px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 14px;
+      height: 14px;
+    }
+    &--guests::before {
+      background-image: url('../images/hotel/icons/user.svg');
+      margin-bottom: 8px;
+    }
+    &--room::before {
+      background-image: url('../images/hotel/icons/home.svg');
+    }
+  }
+  &__booking {
+    @extend %nunito-600;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  &__tel {
+    @extend %nunito-600;
+    font-size: 18px;
+    line-height: 25px;
+    position: relative;
+    padding-left: 22px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 0;
+      background-image: url('../images/hotel/icons/phone-call.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 14px;
+      height: 14px;
+    }
+  }
+  &__btn {
+    @extend %nunito-600;
+    font-size: 14px;
+    line-height: 19px;
+    padding: 13px 84px;
+    background-color: $color-btn;
+    border-radius: 4px;
+    margin-top: 17px;
+    &:hover {
+      outline: #0A223D solid 1px;
+      color: #0A223D;
+      background-color: $default;
+    }
+  }
+  &__map {
+    border-radius: 4px;
+    margin-top: 27px;
+  }
+}
+
 
 
 
