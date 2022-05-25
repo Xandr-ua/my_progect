@@ -930,6 +930,129 @@ body {
   right: 0;
 }
 
+.hotel__newletters {
+  padding: 127px 0 115px;
+  color: #FFFFFF;
+  background-image: url('../images/hotel/news.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 34, 61, 0.8);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+  &-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &-title {
+    @extend %mulish-600;
+    font-size: 36px;
+    line-height: 45px;
+    text-transform: uppercase;
+  }
+  &-text {
+    @extend %mulish-300;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  &-form {
+    // display: flex;
+  }
+  &-input {
+    border-radius: 4px 0px 0px 4px;
+    background-color: $default;
+    padding: 19px 32px;
+    max-width: 285px;
+    margin-right: -3px;
+  }
+  &-btn {
+    padding: 19px 20px;
+    background-color: $color-btn;
+    border-radius: 0px 4px 4px 0px;
+    @extend %mulish-700;
+  }
+}
+
+.hotel__activities {
+  padding: 60px 0 98px;
+
+  & .category-title {
+    margin-bottom: 57px;
+  }
+  &-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-item {
+    border-radius: 6px;
+    color: $default;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 255px;
+    height: 255px;
+    width: 100%;
+    padding: 24px 26px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+    }
+    &--bar {
+      background-image: url('../images/hotel/ativitties/1.jpg');
+    }
+    &--golf {
+      background-image: url('../images/hotel/ativitties/2.jpg');
+    }
+    &--hiking {
+      background-image: url('../images/hotel/ativitties/3.jpg');
+    }
+    &--quest {
+      background-image: url('../images/hotel/ativitties/4.jpg');
+    }
+  }
+  &-text {
+    @extend %mulish-700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 18px;
+  }
+  &-btn {
+    padding: 7px 22px;
+    background-color: $color-btn;
+    border-radius: 4px;
+    @extend %mulish-600;
+    line-height: 16px;
+    max-width: 103px;
+    &:hover {
+      color: #0a223d;
+      background-color: #fff;
+    }
+  }
+}
+
 
 
 
