@@ -29,7 +29,7 @@ body {
 .hotel-body {
   @extend %mulish-400;
   font-style: normal;
-  background-color: $default;
+  background-color: #F5FAFE;
   color: $hotel-default;
   font-size: 12px;
   line-height: 15px;
@@ -96,6 +96,23 @@ body {
   font-size: 42px;
   line-height: 46px;
   text-align: center;
+}
+
+.category-title {
+  @extend %mulish-700;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.hotel__category-subtitle {
+  @extend %mulish-700;
+  font-size: 14px;
+  line-height: 18px;
+  color: $default;
+  background-color: #0A223D;
+  padding: 16px 0 16px 24px;
+  border-radius: 4px 4px 0px 0px;
 }
 
 .indent {

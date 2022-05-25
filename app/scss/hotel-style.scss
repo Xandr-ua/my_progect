@@ -17,7 +17,6 @@ body {
 
 .hotel-header__up-call {
   padding: 24px 0;
-  background-color: #F5FAFE;
 
   &-wrap {
     display: flex;
@@ -71,6 +70,7 @@ body {
 }
 
 .hotel-header__middle {
+  background-color: $default;
   
   &-wrap {
     display: flex;
@@ -527,6 +527,169 @@ body {
   &__map {
     border-radius: 4px;
     margin-top: 27px;
+  }
+}
+
+.hotel__category {
+  padding-bottom: 65px;
+
+  &-list {
+    display: flex;
+    padding-bottom: 40px;
+  }
+  &-item {
+    @extend %mulish-700;
+    font-size: 14px;
+    line-height: 18px;
+    &:not(:last-child) {
+      margin-right: 52px;
+    }
+  }
+  &-link {
+    padding-bottom: 15px;
+  }
+  &-link--active {
+    color: $color-btn;
+    border-bottom: 4px solid $color-btn;
+  }
+  & .category-title {
+    margin-bottom: 30px;
+  }
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px;
+  }
+  &-inner {
+    width: 47%;
+  }
+  &-packaj-inner {
+    background-color: $default;
+    border-radius: 8px 8px 8px 0px;
+    display: flex;
+    justify-content: space-around;
+  }
+  &-packaj-list {
+    padding: 27px 0;
+  }
+  &-packaj-item {
+    padding-left: 39px;
+    position: relative;
+    &:not(:last-child) {
+      margin-bottom: 22px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 18px;
+      height: 18px;
+    }
+    &--check::before {
+      background-image: url('../images/hotel/icons/check.svg');
+    }
+  }
+  &-offer-inner {
+    background-color: $default;
+    border-radius: 8px 8px 8px 0px;
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  &-offer-list {
+    padding: 29px 0 18px;
+  }
+  &-offer-item {
+    padding-left: 39px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 18px;
+      height: 18px;
+    }
+    &--check::before {
+      background-image: url('../images/hotel/icons/check.svg');
+    }
+    &--calendar::before {
+      background-image: url('../images/hotel/icons/offer-calendar.svg');
+    }
+  }
+  &-offer-item--check {
+    max-width: 168px;
+  }
+  &-offer-data {
+    margin-top: 25px;
+    padding-left: 39px;
+    @extend %mulish-400;
+    font-style: italic;
+    font-size: 10px;
+    line-height: 13px;
+  }
+  &-sammer {
+    background-color: $default;
+    border-radius: 8px;
+    padding-bottom: 65px;
+  }
+  &-sammer-inner-up {
+    display: flex;
+    padding: 38px 85px 50px 24px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      border-bottom: 1px dashed #E0E0E0;
+      width: 95%;
+    }
+  }
+  &-sammer-list {
+    max-width: 258px;
+    width: 100%;
+    &:not(:last-child) {
+      margin-right: 115px;
+    }
+  }
+  &-sammer-item-text {
+    @extend %mulish-600;
+    font-size: 13px;
+    line-height: 16px;
+    color: $color-btn;
+    margin-bottom: 21px;
+  }
+  &-sammer-item {
+    padding-left: 40px;
+    position: relative;
+    &:not(:last-child) {
+      margin-bottom: 21px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url('../images/hotel/icons/check.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &-sammer-inner-bottom {
+    display: flex;
+    padding: 38px 85px 50px 24px;
   }
 }
 
