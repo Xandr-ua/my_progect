@@ -180,6 +180,17 @@ $('.crypto-tools__list-slider').slick({
 
   ////////// Page Hotel End //////
 
+
+
+  ///////// Page FastFix /////
+
+
+
+
+  
+
+  ////////// Page FastFix End //////
+
   let mixer = mixitup('.portfolio__content-list');
   
 })

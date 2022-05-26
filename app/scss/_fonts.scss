@@ -170,3 +170,29 @@
 
 
 /////////////////////  ////////////////////////////
+
+
+////////////// Fonts for the FastFix page ///////////////////
+
+@font-face {
+  font-family: 'Poppins-Light';
+  font-weight: 300;
+  font-style: normal;
+  src: local('Mulish-Light'),
+    url('../fonts/Poppins-Light.woff2') format('woff2'),
+    url('../fonts/Poppins-Light.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins-SemiBold';
+  font-weight: 600;
+  font-style: normal;
+  src: local('Poppins-SemiBold'),
+    url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+    url('../fonts/Poppins-SemiBold.woff') format('woff');
+  font-display: swap;
+}
+
+
+/////////////////////  ////////////////////////////

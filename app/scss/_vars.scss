@@ -106,6 +106,25 @@ $color-btn: #EC1F46;
 
 //////////////////////////// ////////////////////////
 
+
+
+/////////////////// For the FastFix page //////////////////
+
+
+%poppins-300 {
+  font-family: 'Poppins-Light', sans-serif;
+  font-weight: 300;
+}
+
+%poppins-600 {
+  font-family: 'Poppins-SemiBold', sans-serif;
+  font-weight: 600;
+}
+
+//////////////////////////// ////////////////////////
+
+
+
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
 }
