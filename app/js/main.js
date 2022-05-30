@@ -184,7 +184,107 @@ $('.crypto-tools__list-slider').slick({
 
   ///////// Page FastFix /////
 
+  $('.fast-header__nav-item-1').on('click', function () {
+    $('.fast-header__nav-item--arrow-1').toggleClass('expand');
+    $('.fast-header__nav-item--arrow-1').toggleClass('active');
 
+    $('.fast-header__nav-item--arrow-2').removeClass('expand');
+
+    $('.fast-header__nav-item--arrow-3').removeClass('expand');
+
+    $('.fast-header__nav-item--arrow-4').removeClass('expand');
+
+    $('.fast-header__nav-item--arrow-5').removeClass('expand');
+
+    $('.fast-header__nav-item--arrow-6').removeClass('expand');
+
+
+    $('.fast-header__nav-subtitle-iphone').toggleClass('show');
+
+
+
+  })
+
+  $('.fast-header__nav-item-2').on('click', function () {
+    $('.fast-header__nav-item--arrow-1').removeClass('expand');
+    $('.fast-header__nav-item--arrow-2').toggleClass('expand');
+    $('.fast-header__nav-item--arrow-3').removeClass('expand');
+    $('.fast-header__nav-item--arrow-4').removeClass('expand');
+    $('.fast-header__nav-item--arrow-5').removeClass('expand');
+    $('.fast-header__nav-item--arrow-6').removeClass('expand');
+
+
+    $('.fast-header__nav-item--arrow-1').removeClass('active');
+
+
+    $('.fast-header__nav-subtitle-iphone').addClass('show');
+
+  })
+
+  $('.fast-header__nav-item-3').on('click', function () {
+    $('.fast-header__nav-item--arrow-1').removeClass('expand');
+    $('.fast-header__nav-item--arrow-2').removeClass('expand');
+    $('.fast-header__nav-item--arrow-3').toggleClass('expand');
+    $('.fast-header__nav-item--arrow-4').removeClass('expand');
+    $('.fast-header__nav-item--arrow-5').removeClass('expand');
+    $('.fast-header__nav-item--arrow-6').removeClass('expand');
+
+
+    $('.fast-header__nav-item--arrow-1').removeClass('active');
+
+
+    $('.fast-header__nav-subtitle-iphone').addClass('show');
+
+  })
+
+  $('.fast-header__nav-item-4').on('click', function () {
+    $('.fast-header__nav-item--arrow-1').removeClass('expand');
+    $('.fast-header__nav-item--arrow-2').removeClass('expand');
+    $('.fast-header__nav-item--arrow-3').removeClass('expand');
+    $('.fast-header__nav-item--arrow-4').toggleClass('expand');
+    $('.fast-header__nav-item--arrow-5').removeClass('expand');
+    $('.fast-header__nav-item--arrow-6').removeClass('expand');
+
+
+    $('.fast-header__nav-item--arrow-1').removeClass('active');
+
+
+    $('.fast-header__nav-subtitle-iphone').addClass('show');
+
+  })
+
+  $('.fast-header__nav-item-5').on('click', function () {
+    $('.fast-header__nav-item--arrow-1').removeClass('expand');
+    $('.fast-header__nav-item--arrow-2').removeClass('expand');
+    $('.fast-header__nav-item--arrow-3').removeClass('expand');
+    $('.fast-header__nav-item--arrow-4').removeClass('expand');
+    $('.fast-header__nav-item--arrow-5').toggleClass('expand');
+    $('.fast-header__nav-item--arrow-6').removeClass('expand');
+
+
+    $('.fast-header__nav-item--arrow-1').removeClass('active');
+
+
+    $('.fast-header__nav-subtitle-iphone').addClass('show');
+    
+  })
+
+  $('.fast-header__nav-item-6').on('click', function () {
+    $('.fast-header__nav-item--arrow-1').removeClass('expand');
+    $('.fast-header__nav-item--arrow-2').removeClass('expand');
+    $('.fast-header__nav-item--arrow-3').removeClass('expand');
+    $('.fast-header__nav-item--arrow-4').removeClass('expand');
+    $('.fast-header__nav-item--arrow-5').removeClass('expand');
+    $('.fast-header__nav-item--arrow-6').toggleClass('expand');
+
+
+    
+    $('.fast-header__nav-item--arrow-1').removeClass('active');
+
+
+    $('.fast-header__nav-subtitle-iphone').addClass('show');
+
+  })
 
 
   

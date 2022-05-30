@@ -17,13 +17,194 @@ body {
 
 
 .fast-header {
-  
   height: 100vh;
 
-  &__top-menu {
-    background-color: #151516;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #BCBCBC;
+    line-height: 1.25;
+    padding-bottom: 12px;
+    padding-top: 10px;
+  }
+  &__location {
+    padding-left: 28px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url('../images/fast-fix/icons/map.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    padding-left: 28px;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 20px;
+      height: 20px;
+    }
+
+    &--clock::before {
+      background-image: url('../images/fast-fix/icons/clock.svg');
+    }
+
+    &--phone::before {
+      background-image: url('../images/fast-fix/icons/phone.svg');
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0 10px;
+    position: relative;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    @extend %poppins-600;
+    line-height: 24px;
+  }
+
+  &__nav-item {
+    padding-right: 17px;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+
+    &:nth-child(7) {
+      padding-right: 0;
+    }
+
+    &:nth-child(8) {
+      padding-right: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      right: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 12px;
+      height: 10px;
+      
+    }
+
+    &.expand::after {
+      transform: rotate(-180deg);
+    }
+
+    &--arrow-1::after {
+      background-image: url('../images/fast-fix/icons/arrow.svg');
+    }
+
+    &--arrow-2::after {
+      background-image: url('../images/fast-fix/icons/arrow.svg');
+    }
+
+    &--arrow-3::after {
+      background-image: url('../images/fast-fix/icons/arrow.svg');
+    }
+
+    &--arrow-4::after {
+      background-image: url('../images/fast-fix/icons/arrow.svg');
+    }
+
+    &--arrow-5::after {
+      background-image: url('../images/fast-fix/icons/arrow.svg');
+    }
+
+    &--arrow-6::after {
+      background-image: url('../images/fast-fix/icons/arrow.svg');
+    }
+  }
+  &__nav-link:hover {
+    color: #029B5E;
   }
 }
+
+.active {
+  color: #029B5E;
+}
+
+.fast-header__nav-subtitle-iphone {
+  display: flex;
+  position: absolute;
+  top: 92%;
+  right: 40%;
+  padding: 42px 32px 24px 32px;
+  border-radius: 8px;
+  background-color: $default;
+  box-shadow: 2px 2px 6px rgba(51, 51, 51, 0.25);
+  z-index: 1;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    border-top: inherit;
+    border-left: inherit;
+    background-color: inherit;
+    z-index: -1;
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  &-list {
+    min-width: 46px;
+    max-width: 80px;
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+  }
+  &-link {
+    padding-bottom: 8px;
+    line-height: 24px;
+    &:hover {
+      color: #029B5E;
+    }
+  }
+}
+
+.fast-header__nav-subtitle-iphone.show {
+  display: none;
+}
+
+
+
+
 
 
 
