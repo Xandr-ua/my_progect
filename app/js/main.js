@@ -186,7 +186,6 @@ $('.crypto-tools__list-slider').slick({
 
   $('.fast-header__nav-item-1').on('click', function () {
     $('.fast-header__nav-item--arrow-1').toggleClass('expand');
-    $('.fast-header__nav-item--arrow-1').toggleClass('active');
 
     $('.fast-header__nav-item--arrow-2').removeClass('expand');
 
@@ -200,7 +199,7 @@ $('.crypto-tools__list-slider').slick({
 
 
     $('.fast-header__nav-subtitle-iphone').toggleClass('show');
-
+    $('.fast-header__nav-subtitle-mac').addClass('show');
 
 
   })
@@ -214,10 +213,8 @@ $('.crypto-tools__list-slider').slick({
     $('.fast-header__nav-item--arrow-6').removeClass('expand');
 
 
-    $('.fast-header__nav-item--arrow-1').removeClass('active');
-
-
     $('.fast-header__nav-subtitle-iphone').addClass('show');
+    $('.fast-header__nav-subtitle-mac').addClass('show');
 
   })
 
@@ -230,10 +227,9 @@ $('.crypto-tools__list-slider').slick({
     $('.fast-header__nav-item--arrow-6').removeClass('expand');
 
 
-    $('.fast-header__nav-item--arrow-1').removeClass('active');
-
-
     $('.fast-header__nav-subtitle-iphone').addClass('show');
+
+    $('.fast-header__nav-subtitle-mac').toggleClass('show');
 
   })
 
@@ -246,9 +242,7 @@ $('.crypto-tools__list-slider').slick({
     $('.fast-header__nav-item--arrow-6').removeClass('expand');
 
 
-    $('.fast-header__nav-item--arrow-1').removeClass('active');
-
-
+    $('.fast-header__nav-subtitle-mac').addClass('show');
     $('.fast-header__nav-subtitle-iphone').addClass('show');
 
   })
@@ -262,9 +256,8 @@ $('.crypto-tools__list-slider').slick({
     $('.fast-header__nav-item--arrow-6').removeClass('expand');
 
 
-    $('.fast-header__nav-item--arrow-1').removeClass('active');
-
-
+    $('.fast-header__nav-subtitle-mac').addClass('show');
+    
     $('.fast-header__nav-subtitle-iphone').addClass('show');
     
   })
@@ -278,10 +271,9 @@ $('.crypto-tools__list-slider').slick({
     $('.fast-header__nav-item--arrow-6').toggleClass('expand');
 
 
+    $('.fast-header__nav-subtitle-mac').addClass('show');
     
-    $('.fast-header__nav-item--arrow-1').removeClass('active');
-
-
+    
     $('.fast-header__nav-subtitle-iphone').addClass('show');
 
   })
