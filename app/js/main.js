@@ -275,8 +275,101 @@ $('.crypto-tools__list-slider').slick({
     
     
     $('.fast-header__nav-subtitle-iphone').addClass('show');
+  });
 
-  })
+
+  $('.fast-header__bottom-burger').on('click', function () {
+
+    $('.fast-header__bottom-burger-line').toggleClass('open');
+    $('.fast-body').toggleClass('blur');
+    $('.fast-body').toggleClass('fixed');
+    $('.fast-header__burgermenu').toggleClass('menu-open');
+
+
+  });
+
+
+  //////////////////// Burger menu ///////////////////////
+
+
+  $('.fast-header__burgermenu-item-iphone').on('click', function () {
+    
+    $('.fast-header__burgermenu-item--arrow-1').toggleClass('expand');
+    $('.fast-header__burgermenu-item--arrow-2').removeClass('expand');
+    $('.fast-header__burgermenu-item--arrow-3').removeClass('expand');
+    $('.fast-header__burgermenu-item--arrow-4').removeClass('expand');
+    $('.fast-header__burgermenu-item--arrow-5').removeClass('expand');
+    $('.fast-header__burgermenu-item--arrow-6').removeClass('expand');
+
+    $('.fast-header__burgermenu-submenu').toggleClass('open-submenu');
+
+
+  });
+
+  $('.fast-header__burgermenu-item-ipad').on('click', function () {
+
+    $('.fast-header__burgermenu-item--arrow-1').removeClass('expand');
+    $('.fast-header__burgermenu-item--arrow-2').toggleClass('expand');
+    $('.fast-header__burgermenu-item--arrow-3').removeClass('expand');
+    $('.fast-header__burgermenu-item--arrow-4').removeClass('expand');
+    $('.fast-header__burgermenu-item--arrow-5').removeClass('expand');
+    $('.fast-header__burgermenu-item--arrow-6').removeClass('expand');
+
+
+  });
+
+  $('.fast-header__burgermenu-item-mac').on('click', function () {
+
+    $('.fast-header__burgermenu-item--arrow-1').removeClass('expand');
+    $('.fast-header__burgermenu-item--arrow-2').removeClass('expand');
+    $('.fast-header__burgermenu-item--arrow-3').toggleClass('expand');
+    $('.fast-header__burgermenu-item--arrow-4').removeClass('expand');
+    $('.fast-header__burgermenu-item--arrow-5').removeClass('expand');
+    $('.fast-header__burgermenu-item--arrow-6').removeClass('expand');
+
+
+  });
+
+  $('.fast-header__burgermenu-item-samsung').on('click', function () {
+
+    $('.fast-header__burgermenu-item--arrow-1').removeClass('expand');
+    $('.fast-header__burgermenu-item--arrow-2').removeClass('expand');
+    $('.fast-header__burgermenu-item--arrow-3').removeClass('expand');
+    $('.fast-header__burgermenu-item--arrow-4').toggleClass('expand');
+    $('.fast-header__burgermenu-item--arrow-5').removeClass('expand');
+    $('.fast-header__burgermenu-item--arrow-6').removeClass('expand');
+
+
+  });
+
+  $('.fast-header__burgermenu-item-oneplus').on('click', function () {
+
+    $('.fast-header__burgermenu-item--arrow-1').removeClass('expand');
+    $('.fast-header__burgermenu-item--arrow-2').removeClass('expand');
+    $('.fast-header__burgermenu-item--arrow-3').removeClass('expand');
+    $('.fast-header__burgermenu-item--arrow-4').removeClass('expand');
+    $('.fast-header__burgermenu-item--arrow-5').toggleClass('expand');
+    $('.fast-header__burgermenu-item--arrow-6').removeClass('expand');
+
+
+  });
+
+  $('.fast-header__burgermenu-item-huawei').on('click', function () {
+
+    $('.fast-header__burgermenu-item--arrow-1').removeClass('expand');
+    $('.fast-header__burgermenu-item--arrow-2').removeClass('expand');
+    $('.fast-header__burgermenu-item--arrow-3').removeClass('expand');
+    $('.fast-header__burgermenu-item--arrow-4').removeClass('expand');
+    $('.fast-header__burgermenu-item--arrow-5').removeClass('expand');
+    $('.fast-header__burgermenu-item--arrow-6').toggleClass('expand');
+
+
+  });
+
+
+  //////////////////// Burger menu END ///////////////////////
+
+
 
 
   
