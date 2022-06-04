@@ -270,10 +270,7 @@ body {
 }
 
 .fast-header__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: calc(100vh - 420px);
+  
   position: relative;
   &::before {
     content: "";
@@ -285,11 +282,15 @@ body {
     background-size: contain;
     background-image: url('../images/fast-fix/top-bg.png');
     width: 74%;
-    height: 880px;
+    height: 846px;
     z-index: -1;
   }
   &-wrap {
     width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 420px);
   }
   &-title {
     @extend %poppins-600;

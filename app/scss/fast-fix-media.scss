@@ -9,7 +9,6 @@
   .fast-header__bottom-burger {
     display: block;
     z-index: 4;
-    margin-bottom: 48px;
   }
 
   .fast-header__bottom-burger-line {
@@ -88,6 +87,7 @@
     transition: all 0.5s;
     &-item {
       padding: 16px 0;
+      border-bottom: 1px solid #2525250d;
       position: relative;
 
       &::before {
@@ -217,17 +217,16 @@
      display: block;
    }
 
-
-
-
-
-
-
-
-
-
   .fast-header__content::before {
     height: 630px;
+  }
+
+  .fast-header__content {
+
+    &-wrap {
+      height: calc(100vh - 110px);
+    }
+
   }
   
 }
@@ -237,7 +236,52 @@
 @media (max-width: 992px) {
 
 
- 
+ .fast-header__content {
+
+  &::before {
+    height: 450px;
+  }
+
+  &-wrap {
+    height: calc(100vh - 330px);
+  }
+
+  &-title {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  &-btn-call {
+    padding: 12px 32px;
+  }
+
+  &-btn-show {
+    padding: 12px 32px;
+  }
+
+ }
+
+ .fast-header__category {
+
+
+  &-subtitle {
+  font-size: 28px;
+   line-height: 42px;
+  }
+
+  &-item {
+    padding: 12px 0px 0 6px;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &-link {
+    font-size: 14px;
+    line-height: 21px;
+  }
+   
+ }
  
 
 
@@ -248,7 +292,66 @@
 
  
   
+.fast-header__item--clock {
+  display: none;
+}
 
+
+.fast-header__content {
+
+  &::before {
+    width: 44%;
+  }
+
+  &-wrap {
+    width: 65%;
+  }
+
+  &-title {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  &-btn-call {
+    padding: 12px 32px;
+  }
+
+  &-btn-show {
+    padding: 12px 32px;
+  }
+
+}
+
+
+.fast-header__category {
+
+
+  &-subtitle {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+    justify-items: center;
+  }
+
+  &-item {
+    max-width: 156px;
+
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+  }
+
+  &-link {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+}
 
 
 
@@ -257,6 +360,54 @@
 @media (max-width: 576px) {
 
 
+
+  .fast-header__top {
+    font-size: 12px;
+    line-height: 1.25;
+  }
+
+  .fast-header__content {
+
+    &::before {
+      top: 17%;
+    }
+
+    &-wrap {
+      width: 100%;
+      height: calc(100vh - 372px);
+      text-align: center;
+    }
+
+    &-title {
+      font-size: 22px;
+      line-height: 33px;
+    }
+
+    &-text {
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    &-inner {
+      justify-content: center;
+    }
+
+    &-btn-call {
+      padding: 12px 24px;
+    }
+
+    &-btn-show {
+      padding: 12px 24px;
+    }
+
+  }
+
+  .fast-header__category {
+
+    &-subtitle {
+      width: 61%;
+    }
+  }
   
 
 
