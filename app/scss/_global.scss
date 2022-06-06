@@ -133,6 +133,20 @@ body {
   border-radius: 4px 4px 0px 0px;
 }
 
+.fast-main__title {
+  @extend %poppins-600;
+  font-size: 38px;
+  line-height: 57px;
+}
+
+.fast-main__text {
+  @extend %poppins-600;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #BCBCBC;
+}
+
 .indent {
   padding: 140px 0 140px;
 }

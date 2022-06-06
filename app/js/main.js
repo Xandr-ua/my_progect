@@ -281,6 +281,7 @@ $('.crypto-tools__list-slider').slick({
   $('.fast-header__bottom-burger').on('click', function () {
 
     $('.fast-header__bottom-burger-line').toggleClass('open');
+    $('.fast-header__burgermenu').toggleClass('fast-header__burgermenu-open');
     $('.fast-body').toggleClass('blur');
     $('.fast-body').toggleClass('fixed');
     $('.fast-header__burgermenu').toggleClass('menu-open');

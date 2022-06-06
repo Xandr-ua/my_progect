@@ -281,8 +281,8 @@ body {
     background-position: right;
     background-size: contain;
     background-image: url('../images/fast-fix/top-bg.png');
-    width: 74%;
-    height: 846px;
+    width: 38%;
+    height: 100%;
     z-index: -1;
   }
   &-wrap {
@@ -290,7 +290,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: calc(100vh - 420px);
+    height: calc(100vh - 414px);
   }
   &-title {
     @extend %poppins-600;
@@ -304,6 +304,7 @@ body {
   }
   &-inner {
     display: flex;
+    margin-bottom: 30px
   }
   &-btn-call {
     @extend %poppins-600;
@@ -399,6 +400,170 @@ body {
   }
   &-img {
     display: block;
+  }
+}
+
+.fast-footer {
+
+  &__wrap {
+    display: flex;
+    margin-bottom: 24px;
+    padding-top: 24px;
+    border-top: 1px solid #BCBCBC;
+  }
+
+  &__logo {
+    width: 31%;
+    margin-right: 122px;
+    &-text {
+      margin-top: 12px;
+    }
+  }
+
+  &__service {
+    display: flex;
+  }
+
+  &__service-list {
+    margin-right: 24px;
+  }
+
+  &__service-item {
+    margin-bottom: 8px;
+    &:first-child {
+      @extend %poppins-600;
+      line-height: 24px;
+      margin-bottom: 12px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__time-job {
+    width: 24%;
+    font-style: normal;
+  }
+
+  &__time-job-item {
+    margin-bottom: 12px;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  &-text {
+    line-height: 1.25;
+  }
+
+  &__bottom-social {
+    display: flex;
+  }
+
+  &__bottom-link {
+    position: relative;
+    padding: 0 10px;
+    display: block;
+
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -11px;
+      right: 0;
+      width: 20px;
+      height: 20px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    &--fb::before {
+      background-image: url('../images/fast-fix/icons/fb.svg');
+    }
+
+    &--google::before {
+      background-image: url('../images/fast-fix/icons/google-plus.svg');
+    }
+  }
+}
+
+.fast-main__service {
+  margin-top: 31px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url(../images/fast-fix/service-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    border-radius: 0px 20px 20px 0px;
+  }
+
+  &-contant {
+    max-width: 546px;
+    margin-left: 60px;
+    margin-left: auto;
+  }
+
+  &-list {
+    margin-top: 48px;
+  }
+
+  &-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  &-subtitle {
+    @extend %poppins-600;
+    font-size: 20px;
+    line-height: 1.1;
+    padding-left: 36px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 28px;
+      height: 28px;
+    }
+
+    &--time::before {
+      background-image: url('../images/fast-fix/icons/time.svg');
+    }
+
+    &--specialists::before {
+      background-image: url('../images/fast-fix/icons/specialists.svg');
+    }
+
+    &--guaranty::before {
+      background-image: url('../images/fast-fix/icons/guaranty.svg');
+    }
+  }
+
+  &-text {
+    line-height: 24px;
+  }
+
+  &-img {
+    display: none;
   }
 }
 
