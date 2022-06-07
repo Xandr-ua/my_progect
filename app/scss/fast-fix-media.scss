@@ -269,6 +269,24 @@
     }
   }
 
+  .fast-main__reviews-adress-map {
+    overflow:hidden;
+    padding-bottom:33.25%;
+    position:relative;
+    height:0;
+    &iframe {
+      left:0;
+      top:0;
+      height:100%;
+      width:100%;
+      position:absolute;
+    }
+  }
+
+
+
+
+
 
 
   
@@ -405,6 +423,29 @@
   margin: 0 auto;
   margin-top: 20px;
 }
+
+.fast-main__reviews-adress-map {
+  padding-bottom: 44.25%;
+}
+
+.fast-main__reviews-adress-content {
+  padding: 32px;
+}
+
+.fast-main__reviews-adress-text {
+  font-size: 14px;
+  line-height: 21px;
+  padding-left: 5px;
+}
+
+.fast-main__reviews-adress-btn {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+
+
+
 
 
 
@@ -563,6 +604,10 @@
 .fast-main__reviews-average-rating-btn--tablet {
   display: block;
   margin: 20px auto 0;
+}
+
+.fast-main__reviews-adress-map {
+  padding-bottom: 60.25%;
 }
 
 
@@ -741,6 +786,19 @@
 
   .fast-main__reviews-average-rating-btn--tablet {
     display: none;
+  }
+
+
+  .fast-main__reviews-adress-map {
+    padding-bottom: 100.25%;
+  }
+
+  .fast-main__reviews-adress-content {
+    display: none;
+  }
+
+  .fast-main__reviews-adress-btn {
+    padding: 11px 24px;
   }
 
 
