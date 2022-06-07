@@ -568,6 +568,260 @@ body {
 }
 
 
+.fast-main__reviews {
+  padding: 96px 0;
+
+  & .fast-main__title {
+    text-align: center;
+  }
+
+  & .fast-main__text {
+    text-align: center;
+    margin-bottom: 53px;
+  }
+
+  &-list {
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    // align-items: center;
+    // display: grid;
+    column-count: 4;
+    column-gap: 24px;
+  }
+
+  &-item {
+    display: inline-block;
+    max-width: 270px;
+    width: 100%;
+    background-color: $default;
+    box-shadow: 2px 2px 6px rgba(51, 51, 51, 0.25);
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 24px;
+    &:last-child {
+      display: none;
+    }
+  }
+
+  &-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  &-google-maps {
+    @extend %poppins-600;
+    font-size: 14px;
+    line-height: 1;
+    padding-left: 24px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: 0;
+      background-image: url('../images/fast-fix/icons/google-maps.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 20px;
+      height: 20px;
+    }
+    &-mobile {
+      display: none;
+    }
+  }
+
+  &-facebook {
+    @extend %poppins-600;
+    font-size: 14px;
+    line-height: 1;
+    padding-left: 24px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: 0;
+      background-image: url('../images/fast-fix/icons/fb.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 20px;
+      height: 20px;
+    }
+    &-mobile {
+      display: none;
+    }
+  }
+
+  &-star {
+    @extend %poppins-600;
+    font-size: 16px;
+    line-height: 1;
+    padding-right: 16px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-image: url('../images/fast-fix/icons/star.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  &-blockquote {
+    line-height: 24px;
+  }
+
+  &-author {
+    display: flex;
+  }
+
+  &-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 8px;
+  }
+
+  &-name {
+    @extend %poppins-600;
+    line-height: 24px;
+    &-mobile {
+      display: none;
+      @extend %poppins-600;
+      line-height: 24px;
+    }
+  }
+
+  &-origins {
+    @extend %poppins-600;
+    font-size: 14px;
+    line-height: 1;
+    color: #029B5E;
+    padding-bottom: 2px;
+    border-bottom: 1px dashed #029B5E;
+  }
+
+  &-average-rating-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-average-rating-item {
+    display: flex;
+    align-items: center;
+  }
+
+  &-average-rating-google-maps {
+    margin-right: 8px;
+    @extend %poppins-600;
+    line-height: 24px;
+    padding-left: 50px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -9px;
+      left: 0;
+      background-image: url('../images/fast-fix/icons/google-maps-big.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 38px;
+      height: 38px;
+    }
+  }
+
+  &-average-rating-facebook {
+    margin-right: 8px;
+    @extend %poppins-600;
+    line-height: 24px;
+    padding-left: 57px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -9px;
+      left: 0;
+      background-image: url('../images/fast-fix/icons/facebook-big.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 42px;
+      height: 38px;
+    }
+  }
+
+  &-average-rating-star {
+    margin-right: 8px;
+    @extend %poppins-600;
+    line-height: 24px;
+    color: #029B5E;
+    padding-bottom: 2px;
+    border-bottom: 1px dashed #029B5E;
+  }
+
+  &-average-rating-num {
+    @extend %poppins-600;
+    font-size: 24px;
+    line-height: 1;
+    padding-right: 24px;
+    color: #029B5E;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-image: url('../images/fast-fix/icons/star.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &-average-rating-btn {
+    padding: 12px 48px;
+    @extend %poppins-600;
+    line-height: 24px;
+    color: #029B5E;
+    border: 1px solid #029B5E;
+    border-radius: 25px;
+    &:hover {
+      background: linear-gradient(90deg, #499F5B 0%, #64E77F 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+
+    &:focus {
+      border: 1px solid #2D6C3A;
+      color: #2D6C3A;
+    }
+    &--mobile {
+      display: none;
+    }
+    &--tablet {
+      display: none;
+    }
+  }
+}
+
 
 
 
