@@ -377,6 +377,29 @@ $('.crypto-tools__list-slider').slick({
 
   ////////// Page FastFix End //////
 
+  let accordion = function () {
+    let data = $('.fast-main__faq-list').attr('data-accordion');
+
+    $('.fast-main__faq-subtitle').on('click', function () {
+      if (data === 'close') {
+        $('.fast-main__faq-text').slideUp();
+        if ($(this).hasClass('active')) {
+          $(this).toggleClass('active');
+        }
+        else {
+          $('.fast-main__faq-list').removeClass('active');
+          $(this).toggleClass('active');
+        }
+      }
+      else {
+        $(this).toggleClass('active');
+      }
+      $(this).next('.fast-main__faq-text').not(':animated').slideToggle();
+    })
+  };
+
+  accordion();
+
   let mixer = mixitup('.portfolio__content-list');
   
 })

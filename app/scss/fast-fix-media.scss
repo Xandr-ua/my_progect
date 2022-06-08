@@ -284,6 +284,13 @@
   }
 
 
+  .fast-main__faq-subtitle,
+  .fast-main__faq-text {
+    font-size: 14px;
+    line-height: 1.25;
+  }
+
+
 
 
 
@@ -606,8 +613,77 @@
   margin: 20px auto 0;
 }
 
+.fast-main__reviews-adress {
+  padding-bottom: 72px;
+}
+
 .fast-main__reviews-adress-map {
   padding-bottom: 60.25%;
+}
+
+
+.fast-main__contacts {
+  padding-bottom: 72px;
+}
+
+.fast-main__contacts .fast-main__text {
+  margin-bottom: 32px;
+}
+
+.fast-main__contacts-form {
+  padding: 32px;
+}
+
+.fast-main__contacts-form-inner {
+  flex-direction: column;
+}
+
+.fast-main__contacts-form-label {
+  width: 100%;
+}
+
+.fast-main__contacts-form-btn {
+  padding: 12px 32px;
+}
+
+.fast-main__contacts-address {
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.fast-main__contacts-address-list:first-child {
+  margin-right: 0;
+  margin-bottom: 32px;
+}
+
+.fast-main__contacts-address-list {
+ width: 100%;
+}
+
+
+.fast-main__faq {
+  padding-bottom: 48px;
+
+  & .fast-main__text {
+    margin-bottom: 24px;
+  }
+}
+
+.fast-main__faq-wrap {
+  flex-direction: column;
+}
+
+.fast-main__faq-list {
+  width: 100%;
+
+  &:first-child {
+    margin-bottom: 24px;
+  }
+}
+
+.fast-main__faq-btn {
+  padding: 12px 24px;
 }
 
 
@@ -799,6 +875,60 @@
 
   .fast-main__reviews-adress-btn {
     padding: 11px 24px;
+  }
+
+
+  .fast-main__contacts-wrap {
+    flex-direction: column;
+  }
+
+  .fast-main__contacts-form {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+
+  .fast-main__contacts-address {
+    text-align: center;
+  }
+
+  .fast-main__contacts-address-item {
+    
+    &--phone {
+      display: inline;
+    }
+
+    &--clock {
+      display: inline;
+    }
+
+    &--fb::before {
+      left: 76px;
+    }
+
+    &--google-plus::before {
+      left: 76px;
+    }
+  }
+
+  .fast-main__faq-list {
+
+    &:first-child {
+      margin-bottom: 16px;
+    }
+  }
+
+  .fast-main__faq-item {
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  .fast-main__faq-subtitle {
+
+    &::after {
+      top: 13px;
+    }
   }
 
 
