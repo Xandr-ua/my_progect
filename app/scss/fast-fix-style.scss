@@ -156,6 +156,13 @@ body {
   &__nav-link:hover {
     color: #029B5E;
   }
+
+  &__nav-link--active {
+    outline: #029B5E solid 1px;
+    border-radius: 17.5px;
+    padding: 6px 12px;
+    color: #029B5E;
+  }
 }
 
 .fast-header__burgermenu {
@@ -170,7 +177,7 @@ body {
   display: flex;
   position: absolute;
   top: 92%;
-  right: 40%;
+  right: 38%;
   padding: 42px 32px 24px 32px;
   border-radius: 8px;
   background-color: $default;
@@ -214,7 +221,7 @@ body {
   display: flex;
   position: absolute;
   top: 92%;
-  right: 22%;
+  right: 20%;
   padding: 42px 32px 24px 32px;
   border-radius: 8px;
   background-color: $default;
@@ -1144,6 +1151,117 @@ body {
 .active::after {
   transform: rotate(-180deg);
 }
+
+.fast-header__iphone {
+  margin: 48px 0;
+  background-image: url('../images/fast-fix/bg-iphone.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &-wrap {
+    padding-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    color: $default;
+  }
+
+  &-title {
+    padding-top: 32px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url('../images/fast-fix/icons/apple.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  &-text {
+    line-height: 24px;
+    width: 68%;
+    margin-bottom: 12px;
+  }
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    width: 73%;
+  }
+
+  &-item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-google-maps {
+   @extend %poppins-600;
+   line-height: 24px;
+   padding-left: 47px;
+   margin-right: 12px;
+   position: relative;
+   &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    background-image: url('../images/fast-fix/icons/google-maps.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+   }
+  }
+
+  &-facebook {
+    @extend %poppins-600;
+    line-height: 24px;
+    padding-left: 47px;
+    margin-right: 12px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: 0;
+      background-image: url('../images/fast-fix/icons/fb.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &-num {
+    @extend %poppins-600;
+    font-size: 24px;
+    line-height: 1;
+    padding-right: 24px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-image: url('../images/fast-fix/icons/star-white.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+
 
 
 
