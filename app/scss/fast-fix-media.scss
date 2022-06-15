@@ -303,6 +303,10 @@
     width: 103px;
   }
 
+  .fast-header__samsung-list {
+    width: 108%;
+  }
+
 
 
 
@@ -748,6 +752,9 @@
 
 .fast-main__contacts-form-inner {
   flex-direction: column;
+  & .fast-main__contacts-form-label:first-child {
+    margin-bottom: 12px;
+  }
 }
 
 .fast-main__contacts-form-label {
@@ -868,6 +875,17 @@
   & img:nth-child(even) {
     order: -1;
   }
+}
+
+
+.fast-main__samsung-list {
+  flex-direction: column;
+  align-items: center;
+}
+
+.fast-main__samsung-item:not(:last-child) {
+  margin-right: 0;
+  margin-bottom: 16px;
 }
 
 

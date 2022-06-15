@@ -1422,6 +1422,78 @@ body {
   }
 }
 
+.fast-header__samsung-title {
+  padding-top: 25px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../images/fast-fix/icons/samsung.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 84px;
+    height: 28px;
+  }
+}
+
+.fast-header__samsung-list {
+  margin-top: 12px;
+  width: 120%;
+}
+
+.fast-main__samsung-list {
+  display: flex;
+  justify-content: center;
+  padding: 48px 0;
+}
+
+.fast-main__samsung-item {
+  max-width: 368px;
+  padding: 0 74px;
+  background-color: $default;
+  box-shadow: 2px 2px 6px rgba(51, 51, 51, 0.25);
+  border-radius: 8px;
+  cursor: pointer;
+
+  &:hover .fast-main__samsung-subtitle::after {
+    transform: translateX(30%);
+  }
+
+  &:not(:last-child) {
+    margin-right: 24px;
+  }
+}
+
+.fast-main__samsung-subtitle {
+  display: inline-block;
+  @extend %poppins-600;
+  line-height: 24px;
+  padding-right: 16px;
+  margin-top: 12px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: 0;
+    background-image: url('../images/fast-fix/icons/arrow-right.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 12px;
+    height: 12px;
+    transition: all 0.4s;
+  }
+}
+
+.fast-main__samsung-img {
+  margin-top: 15px;
+}
+
 
 
 
