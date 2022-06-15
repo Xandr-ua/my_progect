@@ -291,6 +291,28 @@
   }
 
 
+  .fast-header__iphone-text {
+    width: 99%;
+  }
+
+  .fast-header__iphone-list {
+    width: 99%;
+  }
+
+  .fast-main__iphone-item {
+    width: 103px;
+  }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -449,6 +471,96 @@
   font-size: 14px;
   line-height: 21px;
 }
+
+.fast-main__iphone {
+  padding: 70px 0 35px;
+}
+
+.fast-main__title {
+  font-size: 28px;
+  line-height: 42px;
+}
+
+.fast-header__iphone-text {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.fast-header__iphone-list {
+  margin-bottom: 37px;
+}
+
+.fast-header__iphone-item {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.fast-header__iphone-num {
+  font-size: 20px;
+}
+
+.fast-header__iphone-img {
+  width: 40%;
+}
+
+.fast-main__choose {
+  padding: 35px 0;
+}
+
+.fast-main__choose-wrap {
+  flex-direction: column;
+}
+
+.fast-main__choose-title {
+  text-align: center;
+  max-width: 100%;
+  margin-bottom: 32px;
+}
+
+.fast-main__choose-list {
+  flex-wrap: wrap;
+}
+
+.fast-main__choose-item {
+  max-width: 50%;
+  margin-bottom: 20px;
+  &:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+.fast-main__services {
+  padding: 35px 0 70px;
+  & img {
+    max-width: 32%;
+  }
+
+  &-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &-content {
+    padding: 0 10px;
+  }
+
+  &-subtitle {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  &-text {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  &-link {
+    font-size: 14px;
+  }
+}
+
+
+
+
 
 
 
@@ -685,6 +797,91 @@
 .fast-main__faq-btn {
   padding: 12px 24px;
 }
+
+.fast-header__iphone-wrap {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.fast-header__iphone-title::before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.fast-header__iphone-img {
+  display: none;
+}
+
+.fast-main__iphone {
+  padding: 48px 0 24px;
+}
+
+.fast-header__iphone-list {
+  flex-direction: column;
+  align-items: center;
+}
+
+.fast-header__iphone-google-maps {
+  margin-bottom: 16px;
+}
+
+.fast-main__iphone-list {
+  padding: 24px 0;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 16px;
+}
+
+.fast-main__iphone-item {
+  width: 156px;
+}
+
+.fast-main__choose {
+  padding: 24px 0;
+}
+
+.fast-main__choose-item {
+  max-width: 100%;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.fast-main__services {
+  padding: 24px 0 48px;
+  & img {
+    max-width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
+.fast-main__services-list {
+  margin-top: 24px;
+}
+
+.fast-main__services-item {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  & img:nth-child(even) {
+    order: -1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -930,6 +1127,22 @@
       top: 13px;
     }
   }
+
+  .fast-main__title {
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  .fast-main__text {
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+
+
+
+
+
 
 
 
