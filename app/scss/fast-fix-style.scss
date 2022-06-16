@@ -1296,7 +1296,7 @@ body {
     &::after {
       content: "";
       position: absolute;
-      top: 6px;
+      top: 3px;
       right: 0;
       background-image: url('../images/fast-fix/icons/arrow-right.svg');
       background-repeat: no-repeat;
@@ -1478,7 +1478,7 @@ body {
   &::after {
     content: "";
     position: absolute;
-    top: 6px;
+    top: 3px;
     right: 0;
     background-image: url('../images/fast-fix/icons/arrow-right.svg');
     background-repeat: no-repeat;
@@ -1494,6 +1494,78 @@ body {
   margin-top: 15px;
 }
 
+.fast-header__iphone-text-13 {
+  width: 100%;
+}
+
+.fast-header__iphone-list-13 {
+  width: 120%;
+}
+
+.fast-main__prise {
+  text-align: center;
+  padding: 48px 0;
+
+  &-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+  }
+
+  &-list {
+    width: 25%;
+  }
+
+  &-item {
+    padding: 12px 9px;
+    line-height: 24px;
+    position: relative;
+
+    &:first-child {
+      padding-left: 24px;
+      display: inline-block;
+      @extend %poppins-600;
+    }
+
+    &:nth-child(even) {
+      background-color: #F3F7F4;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 14px;
+      left: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 20px;
+      height: 20px;
+    }
+
+    &--reparation::before {
+      background-image: url('../images/fast-fix/icons/reparation.svg');
+    }
+
+    &--prise::before {
+      background-image: url('../images/fast-fix/icons/prise.svg');
+    }
+
+    &--reparationstid::before {
+      background-image: url('../images/fast-fix/icons/clock.svg');
+    }
+  }
+}
+
+.fast-main__category {
+  text-align: center;
+  padding: 48px 0;
+}
+
+.fast-main__contacts-13 {
+  padding: 48px 0 96px;
+}
 
 
 

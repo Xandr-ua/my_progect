@@ -307,6 +307,22 @@
     width: 108%;
   }
 
+  .fast-main__prise-list {
+
+    &:first-child {
+      width: 30%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -561,6 +577,28 @@
     font-size: 14px;
   }
 }
+
+.fast-header__iphone-list-13 {
+  width: 106%;
+}
+
+.fast-main__prise-list {
+
+  &:first-child {
+    width: 40%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -888,6 +926,45 @@
   margin-bottom: 16px;
 }
 
+.fast-main__prise {
+  padding: 48px 0 24px;
+}
+
+.fast-main__prise-wrap {
+  margin-top: 24px;
+}
+
+.fast-main__prise-list {
+  font-size: 12px;
+  line-height: 18px;
+
+  &:first-child {
+    width: 40%;
+  }
+}
+
+.fast-main__category {
+  padding: 24px 0;
+  
+  & .fast-header__category-subtitle,
+  & .fast-header__category-text {
+    width: 100%;
+  }
+}
+
+.fast-main__contacts-13 {
+  padding: 24px 0 48px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1155,6 +1232,42 @@
     font-size: 10px;
     line-height: 15px;
   }
+
+  .fast-main__prise-list {
+
+    &:first-child {
+      width: 45%;
+    }
+
+    &:last-child {
+      width: 30%;
+    }
+  }
+
+  .fast-main__prise-item {
+    height: 93px;
+
+    &:first-child {
+      font-size: 12px;
+      line-height: 18px;
+      padding-left: 20px;
+    }
+
+    &::before {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
 
 
 
