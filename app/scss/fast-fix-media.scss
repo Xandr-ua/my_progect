@@ -314,6 +314,10 @@
     }
   }
 
+  .fast-header__iphone-top--faq .fast-header__iphone-list {
+    width: 50%;
+  }
+
 
 
 
@@ -587,6 +591,10 @@
   &:first-child {
     width: 40%;
   }
+}
+
+.fast-header__iphone-top--faq .fast-header__iphone-list {
+  width: 63%;
 }
 
 
