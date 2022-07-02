@@ -125,6 +125,62 @@ $color-btn: #EC1F46;
 
 
 
+/////////////////// For the Wedding page //////////////////
+
+
+%baskerville-700 {
+  font-family: 'Baskerville-Bold',
+  sans-serif;
+  font-weight: 700;
+}
+
+%baskerville-italic-400 {
+  font-family: 'Baskerville-Italic',
+    sans-serif;
+  font-weight: 400;
+}
+
+%baskerville-400 {
+  font-family: 'Baskerville-Regular',
+    sans-serif;
+  font-weight: 400;
+}
+
+%avenir-800 {
+  font-family: 'Avenir-Black',
+    sans-serif;
+  font-weight: 800;
+}
+
+%avenir-400 {
+  font-family: 'Avenir-Book',
+    sans-serif;
+  font-weight: 400;
+}
+
+%avenir-500 {
+  font-family: 'Avenir-Medium',
+    sans-serif;
+  font-weight: 500;
+}
+
+%avenir-medium-oblique-500 {
+  font-family: 'Avenir-MediumOblique',
+    sans-serif;
+  font-weight: 500;
+}
+
+%avenir-oblique-500 {
+  font-family: 'Avenir-Oblique',
+    sans-serif;
+  font-weight: 500;
+}
+
+
+//////////////////////////// ////////////////////////
+
+
+
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
 }

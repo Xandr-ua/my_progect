@@ -15,6 +15,231 @@ body {
   flex-grow: 1;
 }
 
+.wedding-header {
+  
+  background-color: #0D0A09;
+
+  &__contact-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @extend %avenir-500;
+    font-size: 31px;
+    line-height: 42px;
+    letter-spacing: 0.05em;
+    padding: 17px 0 9px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/wedding/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    position: relative;
+    height: calc(100vh - 66px);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-image: url('../images/wedding/before-bg.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      opacity: 0.4;
+      z-index: 2;
+    }
+  }
+}
+
+.menu {
+  background-color: $default;
+  color: #0D0A09;
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    position: relative;
+    padding: 25px 0;
+    font-size: 25px;
+    line-height: 29px;
+    letter-spacing: 0.055em;
+    text-transform: uppercase;
+
+    &:not(:last-child) {
+      margin-right: 66px;
+    }
+
+    &:hover .menu__submenu {
+      visibility: visible;
+      transform: translateY(0);
+      opacity: 1;
+      color: #0D0A09;
+    }
+  }
+
+  &__item:hover {
+    color: #D59D40;
+  }
+
+  &__submenu {
+    position: absolute;
+    left: -15%;
+    padding-top: 25px;
+    text-align: center;
+    padding: 50px 30px 35px 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all .3s ease;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 43%;
+      background-image: url('../images/wedding/icons/arrow-down.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 41px;
+      height: 41px;
+    }
+  }
+
+  &__subitem {
+
+    &:not(:last-child) {
+      margin-bottom: 27px;
+    }
+
+    &:hover {
+      color: #D59D40;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wedding-footer {
+  
+
+  &__content {
+    background-color: #F9F4EC;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 76px 0 104px;
+    color: #D59D40;
+  }
+
+  &__title {
+    font-size: 37px;
+    line-height: 51px;
+    letter-spacing: 0.015em;
+    margin-bottom: 30px;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    font-size: 21px;
+    line-height: 29px;
+    letter-spacing: 0.015em;
+
+    &:not(:last-child) {
+      margin-right: 42px;
+    }
+  }
+
+  &__bottom {
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__text {
+    width: 27%;
+    font-size: 21px;
+    line-height: 29px;
+    letter-spacing: 0.015em;
+    color: #BEBEBE;
+  }
+}
 
 
 
