@@ -235,6 +235,163 @@ body {
   }
 }
 
+.wedding__portfolio {
+  background-image: url('../images/wedding/portfolio.jpg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  padding: 298px 0 44px;
+  text-align: center;
+
+  &-title {
+    font-size: 50px;
+    line-height: 68px;
+    letter-spacing: -0.065em;
+    color: #FFFFFF;
+  }
+}
+
+.wedding__reviews {
+  padding: 76px 0 102px;
+
+  &-wrap {
+    display: flex;
+
+  }
+
+  &-box {
+    width: 74%;
+    margin-right: 38px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-image: url('../images/wedding/brackets-top.jpg');
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: contain;
+      width: 315px;
+      height: 386px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-image: url('../images/wedding/brackets-bottom.jpg');
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: contain;
+      width: 315px;
+      height: 386px;
+      z-index: -1;
+    }
+  }
+
+  &-inner {
+    width: 84%;
+    padding: 180px 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 70px;
+      right: -28px;
+      background-color: #D59D40;
+      width: 3px;
+      height: 724px;
+    }
+  }
+
+  &-title {
+    @extend %baskerville-400;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #D59D40;
+    margin-bottom: 5px;
+  }
+
+  &-author {
+    @extend %baskerville-400;
+    font-size: 19px;
+    line-height: 107.1%;
+    letter-spacing: 0.06em;
+    color: #000000;
+    margin-bottom: 34px;
+    text-align: end;
+  }
+
+  &-text {
+    @extend %baskerville-400;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 113.6%;
+    color: #000000;
+  }
+
+  &-about {
+    margin: 180px 0;
+    padding: 0 27px 46px 27px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: #F0F0F0;
+      width: 100%;
+      height: 97%;
+      z-index: -1;
+    }
+
+    & .wedding__reviews-title {
+      color: #000000;
+    }
+
+    & .wedding__reviews-author {
+      font-style: italic;
+      text-transform: lowercase;
+    }
+
+    & .wedding__reviews-text {
+      text-align: right;
+    }
+  }
+
+  &-text--about {
+    margin-bottom: 20px;
+  }
+}
+
+.slick-prev,
+.slick-next {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-150%);
+}
+
+.slick-prev {
+  left: -75px;
+}
+
+.slick-next {
+  right: -46px;
+}
+
 
 
 

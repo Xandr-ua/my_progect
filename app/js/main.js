@@ -396,6 +396,21 @@ accordion();
 
   ////////// Page FastFix End //////
 
+
+
+  $('.wedding__reviews-slider').slick({
+    dots: false,
+    slidesToShow: 3,
+    prevArrow: '<button type="button" class="slick-prev"><img src="images/wedding/icons/arrow-left.svg" alt=""></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="images/wedding/icons/arrow-right.svg" alt=""></button>',
+    responsive: [{
+      breakpoint: 769,
+      settings: {
+        arrows: false,
+      }
+    }, ]
+  });
+
   
 
   let mixer = mixitup('.portfolio__content-list');
