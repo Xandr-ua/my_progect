@@ -282,5 +282,15 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Paris-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Paris-Regular'),
+    url('../fonts/Paris-Regular.woff2') format('woff2'),
+    url('../fonts/Paris-Regular.woff') format('woff');
+  font-display: swap;
+}
+
 
 //////////////////////////// ////////////////////////
