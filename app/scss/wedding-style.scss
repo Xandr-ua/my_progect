@@ -562,6 +562,62 @@ body {
   }
 }
 
+.wedding__slider {
+  padding: 188px 0 31px;
+
+  &-item {
+    margin-bottom: 70px;
+  }
+
+  &-title {
+    @extend %paris-regular-400;
+    font-size: 125px;
+    line-height: 125px;
+    letter-spacing: -0.045em;
+    color: #464646;
+    margin-bottom: 45px;
+  }
+
+  &-subtitle {
+    @extend %avenir-500;
+    font-size: 41px;
+    line-height: 56px;
+    letter-spacing: -0.025em;
+    color: #D59D40;
+    margin-bottom: 14px;
+  }
+
+  &-text {
+    @extend %baskerville-400;
+    font-size: 28px;
+    line-height: 126.6%;
+    letter-spacing: 0.015em;
+    color: #000000;
+    width: 70%;
+  }
+
+  & .slick-dots {
+    display: flex;
+    justify-content: center;
+
+    & li:not(:last-child) {
+      margin-right: 32px;
+    }
+
+    & button {
+      font-size: 0;
+      width: 12px;
+      height: 12px;
+      background-color: #D59D40;
+      border-radius: 50%;
+    }
+
+    & .slick-active button {
+      background-color: #464646;
+    }
+  }
+}
+
 
 
 

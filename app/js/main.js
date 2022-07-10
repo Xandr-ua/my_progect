@@ -397,6 +397,8 @@ accordion();
   ////////// Page FastFix End //////
 
 
+  /////////////////// For the Wedding page //////////////////
+
 
   $('.wedding__reviews-slider').slick({
     dots: false,
@@ -410,6 +412,19 @@ accordion();
       }
     }, ]
   });
+
+  $('.wedding__slider-list').slick({
+    dots: true,
+    slidesToShow: 1,
+    arrows: false,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+  });
+
+
+  //////////////////////////// ////////////////////////
 
   
 
